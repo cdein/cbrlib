@@ -1,6 +1,7 @@
-from typing import Any, Callable, Mapping
+import functools
+from typing import Any, Callable, Iterable, Mapping
 
-Evaluator = Callable[[Any, Any], float]
+Evaluate = Callable[[Any, Any], float]
 
 
 def equality(query: Any, case: Any) -> float:
@@ -10,7 +11,7 @@ def equality(query: Any, case: Any) -> float:
 
 
 def total_order(
-    ordering: list[Any], evaluate: Evaluator, query: Any, case: Any
+    ordering: list[Any], evaluate: Evaluate, query: Any, case: Any
 ) -> float:
     try:
         query_index = ordering.index(query)
@@ -30,3 +31,31 @@ def table_lookup(
     if case not in query_map:
         return 0
     return query_map[case]
+
+
+def coverage(query: Any, bulk: Iterable[Any], evaluate: Evaluate = equality) -> float:
+    similarity_sum = 0
+    element_count = 0
+    for element in bulk:
+        similarity = evaluate(query, element)
+        if similarity == 1:
+            return 1
+        similarity_sum += similarity
+        element_count += 1
+    if element_count == 0:
+        return 0
+    return similarity_sum / element_count
+
+
+def set_query_inclusion(query: set[Any], case: set[Any], evaluator: Evaluate) -> float:
+    size_of_query = len(query)
+    if size_of_query == 0:
+        return 0
+    current = functools.reduce(
+        lambda e1, e2: e1 + coverage(e2, case, evaluator), [0, *query]
+    )
+    return float(current) / size_of_query
+
+
+def set_case_inclusion(query: set[Any], case: set[Any], evaluator: Evaluate) -> float:
+    return set_query_inclusion(case, query, evaluator)
