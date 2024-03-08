@@ -109,3 +109,11 @@ def test_set_case_inclusion_empty_case() -> None:
         )
         == 0
     )
+
+
+def test_set_case_intermediate() -> None:
+    assert evaluate.set_intermediate(
+        ("yellow", "green", "red"),
+        ("red", "orange"),
+        LOOKUP_EVALUATOR,
+    ) == pytest.approx(0.55)

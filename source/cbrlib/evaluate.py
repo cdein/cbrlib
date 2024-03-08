@@ -59,3 +59,9 @@ def set_query_inclusion(query: set[Any], case: set[Any], evaluator: Evaluate) ->
 
 def set_case_inclusion(query: set[Any], case: set[Any], evaluator: Evaluate) -> float:
     return set_query_inclusion(case, query, evaluator)
+
+
+def set_intermediate(query: set[Any], case: set[Any], evaluator: Evaluate) -> float:
+    sim_1 = set_query_inclusion(query, case, evaluator)
+    sim_2 = set_query_inclusion(case, query, evaluator)
+    return (sim_1 + sim_2) / 2
