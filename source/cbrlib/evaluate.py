@@ -47,7 +47,7 @@ def coverage(query: Any, bulk: Iterable[Any], evaluate: Evaluate = equality) -> 
     return similarity_sum / element_count
 
 
-def set_query_inclusion(query: set[Any], case: set[Any], evaluator: Evaluate) -> float:
+def set_query_inclusion(evaluator: Evaluate, query: set[Any], case: set[Any]) -> float:
     size_of_query = len(query)
     if size_of_query == 0:
         return 0
@@ -57,11 +57,11 @@ def set_query_inclusion(query: set[Any], case: set[Any], evaluator: Evaluate) ->
     return float(current) / size_of_query
 
 
-def set_case_inclusion(query: set[Any], case: set[Any], evaluator: Evaluate) -> float:
-    return set_query_inclusion(case, query, evaluator)
+def set_case_inclusion(evaluator: Evaluate, query: set[Any], case: set[Any]) -> float:
+    return set_query_inclusion(evaluator, case, query)
 
 
-def set_intermediate(query: set[Any], case: set[Any], evaluator: Evaluate) -> float:
-    sim_1 = set_query_inclusion(query, case, evaluator)
-    sim_2 = set_query_inclusion(case, query, evaluator)
+def set_intermediate(evaluator: Evaluate, query: set[Any], case: set[Any]) -> float:
+    sim_1 = set_query_inclusion(evaluator, query, case)
+    sim_2 = set_query_inclusion(evaluator, case, query)
     return (sim_1 + sim_2) / 2

@@ -31,18 +31,18 @@ def test_coverage_empty_bulk() -> None:
 
 def test_set_query_inclusion() -> None:
     assert evaluate.set_query_inclusion(
+        LOOKUP_EVALUATOR,
         ("red", "orange"),
         ("yellow", "green", "purple"),
-        LOOKUP_EVALUATOR,
     ) == pytest.approx(0.2)
 
 
 def test_set_query_inclusion_equality() -> None:
     assert (
         evaluate.set_query_inclusion(
+            LOOKUP_EVALUATOR,
             ("red",),
             ("green", "red"),
-            LOOKUP_EVALUATOR,
         )
         == 1
     )
@@ -51,9 +51,9 @@ def test_set_query_inclusion_equality() -> None:
 def test_set_query_inclusion_empty_query() -> None:
     assert (
         evaluate.set_query_inclusion(
+            LOOKUP_EVALUATOR,
             [],
             ("yellow", "green", "purple"),
-            LOOKUP_EVALUATOR,
         )
         == 0
     )
@@ -62,9 +62,9 @@ def test_set_query_inclusion_empty_query() -> None:
 def test_set_query_inclusion_empty_case() -> None:
     assert (
         evaluate.set_query_inclusion(
+            LOOKUP_EVALUATOR,
             ("red", "orange"),
             [],
-            LOOKUP_EVALUATOR,
         )
         == 0
     )
@@ -72,18 +72,18 @@ def test_set_query_inclusion_empty_case() -> None:
 
 def test_set_case_inclusion() -> None:
     assert evaluate.set_case_inclusion(
+        LOOKUP_EVALUATOR,
         ("yellow", "green", "purple"),
         ("red", "orange"),
-        LOOKUP_EVALUATOR,
     ) == pytest.approx(0.2)
 
 
 def test_set_case_inclusion_equality() -> None:
     assert (
         evaluate.set_case_inclusion(
+            LOOKUP_EVALUATOR,
             ("green", "red"),
             ("red",),
-            LOOKUP_EVALUATOR,
         )
         == 1
     )
@@ -92,9 +92,9 @@ def test_set_case_inclusion_equality() -> None:
 def test_set_case_inclusion_empty_query() -> None:
     assert (
         evaluate.set_case_inclusion(
+            LOOKUP_EVALUATOR,
             [],
             ("yellow", "green", "purple"),
-            LOOKUP_EVALUATOR,
         )
         == 0
     )
@@ -103,9 +103,9 @@ def test_set_case_inclusion_empty_query() -> None:
 def test_set_case_inclusion_empty_case() -> None:
     assert (
         evaluate.set_case_inclusion(
+            LOOKUP_EVALUATOR,
             ("red", "orange"),
             [],
-            LOOKUP_EVALUATOR,
         )
         == 0
     )
@@ -113,7 +113,7 @@ def test_set_case_inclusion_empty_case() -> None:
 
 def test_set_case_intermediate() -> None:
     assert evaluate.set_intermediate(
+        LOOKUP_EVALUATOR,
         ("yellow", "green", "red"),
         ("red", "orange"),
-        LOOKUP_EVALUATOR,
     ) == pytest.approx(0.55)
