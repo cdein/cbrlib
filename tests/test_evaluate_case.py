@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 import functools
+import math
 from typing import Optional
 
 from cbrlib import evaluate
@@ -223,6 +224,33 @@ def test_case_max_missing_properties() -> None:
         evaluate.case_max(
             mapping4,
             DataObject(color="orange", shape="triangle", pattern="dashed"),
+            DataObject(),
+        )
+        == 0
+    )
+
+
+def test_case_euclidean() -> None:
+    assert evaluate.case_euclidean(
+        mapping4,
+        DataObject(color="red", shape="triangle"),
+        DataObject(color="orange", shape="triangle"),
+    ) == math.sqrt((0.8**2 + 1**2))
+
+
+def test_case_euclidean_missing_properties() -> None:
+    assert (
+        evaluate.case_euclidean(
+            mapping4,
+            DataObject(),
+            DataObject(color="orange", shape="triangle"),
+        )
+        == 0
+    )
+    assert (
+        evaluate.case_euclidean(
+            mapping4,
+            DataObject(color="orange", shape="triangle"),
             DataObject(),
         )
         == 0

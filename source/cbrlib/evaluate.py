@@ -1,5 +1,6 @@
 from collections import namedtuple
 import functools
+import math
 from typing import Any, Callable, Iterable, Mapping
 from statistics import median
 
@@ -161,3 +162,25 @@ def case_max(
     if not similarity_results:
         return 0
     return max(similarity_results)
+
+
+def case_euclidean(
+    mappings: Iterable[PropertyEvaluatorMapping],
+    query: Any,
+    case: Any,
+    getvalue: Callable[[object, str], Any] = getattr,
+) -> float:
+    similarity_sum = 0
+    for mapping in mappings:
+        property_name = mapping[0]
+        evaluator = mapping[1]
+        query_value = getvalue(query, property_name)
+        if query_value is None:
+            continue
+        case_value = getvalue(case, property_name)
+        similarity = evaluator(query_value, case_value)
+        if similarity <= 0:
+            continue
+        print(similarity)
+        similarity_sum += similarity**2
+    return math.sqrt(similarity_sum)
