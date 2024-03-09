@@ -181,6 +181,5 @@ def case_euclidean(
         similarity = evaluator(query_value, case_value)
         if similarity <= 0:
             continue
-        print(similarity)
         similarity_sum += similarity**2
     return math.sqrt(similarity_sum)
