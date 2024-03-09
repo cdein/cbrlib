@@ -1,8 +1,9 @@
 from collections import namedtuple
 import functools
 from typing import Any, Callable, Iterable, Mapping
+from statistics import median
 
-Evaluate = Callable[[Any, Any], float]
+Evaluator = Callable[[Any, Any], float]
 
 
 def equality(query: Any, case: Any) -> float:
@@ -12,7 +13,7 @@ def equality(query: Any, case: Any) -> float:
 
 
 def total_order(
-    ordering: list[Any], evaluate: Evaluate, query: Any, case: Any
+    ordering: list[Any], evaluate: Evaluator, query: Any, case: Any
 ) -> float:
     try:
         query_index = ordering.index(query)
@@ -34,7 +35,7 @@ def table_lookup(
     return query_map[case]
 
 
-def coverage(query: Any, bulk: Iterable[Any], evaluate: Evaluate = equality) -> float:
+def coverage(query: Any, bulk: Iterable[Any], evaluate: Evaluator = equality) -> float:
     similarity_sum = 0
     element_count = 0
     for element in bulk:
@@ -48,7 +49,7 @@ def coverage(query: Any, bulk: Iterable[Any], evaluate: Evaluate = equality) -> 
     return similarity_sum / element_count
 
 
-def set_query_inclusion(evaluator: Evaluate, query: set[Any], case: set[Any]) -> float:
+def set_query_inclusion(evaluator: Evaluator, query: set[Any], case: set[Any]) -> float:
     size_of_query = len(query)
     if size_of_query == 0:
         return 0
@@ -58,11 +59,11 @@ def set_query_inclusion(evaluator: Evaluate, query: set[Any], case: set[Any]) ->
     return current / size_of_query
 
 
-def set_case_inclusion(evaluator: Evaluate, query: set[Any], case: set[Any]) -> float:
+def set_case_inclusion(evaluator: Evaluator, query: set[Any], case: set[Any]) -> float:
     return set_query_inclusion(evaluator, case, query)
 
 
-def set_intermediate(evaluator: Evaluate, query: set[Any], case: set[Any]) -> float:
+def set_intermediate(evaluator: Evaluator, query: set[Any], case: set[Any]) -> float:
     sim_1 = set_query_inclusion(evaluator, query, case)
     sim_2 = set_query_inclusion(evaluator, case, query)
     return (sim_1 + sim_2) / 2
@@ -96,3 +97,31 @@ def case_average(
     if divider <= 0:
         return 0
     return similarity_sum / divider
+
+
+PropertyEvaluatorMapping = namedtuple(
+    "PropertyEvaluatorMapping",
+    {"property_name", "evaluator"},
+)
+
+
+def case_median(
+    mappings: Iterable[PropertyEvaluatorMapping],
+    query: Any,
+    case: Any,
+    *,
+    getvalue: Callable[[Any, str], Any] = getattr
+) -> float:
+    similarity_results = []
+    for mapping in mappings:
+        property_name = mapping[0]
+        evaluator = mapping[1]
+        query_value = getvalue(query, property_name)
+        if query_value is None:
+            continue
+        case_value = getvalue(case, property_name)
+        similarity = evaluator(query_value, case_value)
+        similarity_results.append(similarity)
+    if not similarity_results:
+        return 0
+    return median(sorted(similarity_results))
