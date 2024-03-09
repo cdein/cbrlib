@@ -1,3 +1,4 @@
+from collections import namedtuple
 import functools
 from typing import Any, Callable, Iterable, Mapping
 
@@ -54,7 +55,7 @@ def set_query_inclusion(evaluator: Evaluate, query: set[Any], case: set[Any]) ->
     current = functools.reduce(
         lambda e1, e2: e1 + coverage(e2, case, evaluator), [0, *query]
     )
-    return float(current) / size_of_query
+    return current / size_of_query
 
 
 def set_case_inclusion(evaluator: Evaluate, query: set[Any], case: set[Any]) -> float:
@@ -65,3 +66,33 @@ def set_intermediate(evaluator: Evaluate, query: set[Any], case: set[Any]) -> fl
     sim_1 = set_query_inclusion(evaluator, query, case)
     sim_2 = set_query_inclusion(evaluator, case, query)
     return (sim_1 + sim_2) / 2
+
+
+WeightedPropertyEvaluatorMapping = namedtuple(
+    "WeightedPropertyEvaluatorMapping",
+    {"property_name", "evaluator", "weight"},
+)
+
+
+def case_average(
+    mappings: Iterable[WeightedPropertyEvaluatorMapping],
+    query: Any,
+    case: Any,
+    *,
+    getvalue: Callable[[Any, str], Any] = getattr
+) -> float:
+    divider = 0
+    similarity_sum = 0
+    for mapping in mappings:
+        property_name = mapping[0]
+        evaluator = mapping[1]
+        weight = mapping[2]
+        query_value = getvalue(query, property_name)
+        if query_value is None:
+            continue
+        divider += weight
+        case_value = getvalue(case, property_name)
+        similarity_sum += weight * evaluator(query_value, case_value)
+    if divider <= 0:
+        return 0
+    return similarity_sum / divider
