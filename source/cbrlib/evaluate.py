@@ -105,13 +105,12 @@ PropertyEvaluatorMapping = namedtuple(
 )
 
 
-def case_median(
+def _collect_similarities(
     mappings: Iterable[PropertyEvaluatorMapping],
     query: Any,
     case: Any,
-    *,
-    getvalue: Callable[[Any, str], Any] = getattr
-) -> float:
+    getvalue: Callable[[Any, str], Any],
+) -> list[float]:
     similarity_results = []
     for mapping in mappings:
         property_name = mapping[0]
@@ -122,6 +121,43 @@ def case_median(
         case_value = getvalue(case, property_name)
         similarity = evaluator(query_value, case_value)
         similarity_results.append(similarity)
+    return similarity_results
+
+
+def case_median(
+    mappings: Iterable[PropertyEvaluatorMapping],
+    query: Any,
+    case: Any,
+    *,
+    getvalue: Callable[[Any, str], Any] = getattr
+) -> float:
+    similarity_results = _collect_similarities(mappings, query, case, getvalue)
     if not similarity_results:
         return 0
     return median(sorted(similarity_results))
+
+
+def case_min(
+    mappings: Iterable[PropertyEvaluatorMapping],
+    query: Any,
+    case: Any,
+    *,
+    getvalue: Callable[[Any, str], Any] = getattr
+) -> float:
+    similarity_results = _collect_similarities(mappings, query, case, getvalue)
+    if not similarity_results:
+        return 0
+    return min(similarity_results)
+
+
+def case_max(
+    mappings: Iterable[PropertyEvaluatorMapping],
+    query: Any,
+    case: Any,
+    *,
+    getvalue: Callable[[Any, str], Any] = getattr
+) -> float:
+    similarity_results = _collect_similarities(mappings, query, case, getvalue)
+    if not similarity_results:
+        return 0
+    return max(similarity_results)

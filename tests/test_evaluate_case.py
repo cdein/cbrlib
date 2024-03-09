@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import functools
 from typing import Optional
 
 from cbrlib import evaluate
@@ -10,6 +11,14 @@ class DataObject:
     color: Optional[str] = None
     shape: Optional[str] = None
     pattern: Optional[str] = None
+    another_color: Optional[str] = None
+
+
+LOOKUP = {
+    "red": {"red": 1, "orange": 0.8, "yellow": 0.4},
+    "orange": {"orange": 1, "red": 0.8, "yellow": 0.8},
+}
+LOOKUP_EVALUATOR = functools.partial(evaluate.table_lookup, LOOKUP)
 
 
 mapping1 = (
@@ -27,6 +36,13 @@ mapping3 = (
     evaluate.PropertyEvaluatorMapping("color", evaluate.equality),
     evaluate.PropertyEvaluatorMapping("shape", evaluate.equality),
     evaluate.PropertyEvaluatorMapping("pattern", evaluate.equality),
+)
+
+mapping4 = (
+    evaluate.PropertyEvaluatorMapping("color", LOOKUP_EVALUATOR),
+    evaluate.PropertyEvaluatorMapping("shape", evaluate.equality),
+    evaluate.PropertyEvaluatorMapping("pattern", evaluate.equality),
+    evaluate.PropertyEvaluatorMapping("another_color", LOOKUP_EVALUATOR),
 )
 
 
@@ -106,6 +122,9 @@ def test_case_median() -> None:
         )
         == 0
     )
+
+
+def test_case_median_missing_properties() -> None:
     assert (
         evaluate.case_median(
             mapping3,
@@ -118,6 +137,92 @@ def test_case_median() -> None:
         evaluate.case_median(
             mapping3,
             DataObject(color="red", shape="square", pattern="dotted"),
+            DataObject(),
+        )
+        == 0
+    )
+
+
+def test_case_min() -> None:
+    assert (
+        evaluate.case_min(
+            mapping4,
+            DataObject(color="red", shape="triangle", pattern="dashed"),
+            DataObject(color="orange", shape="triangle", pattern="dashed"),
+        )
+        == 0.8
+    )
+    assert (
+        evaluate.case_min(
+            mapping4,
+            DataObject(
+                color="red", shape="triangle", pattern="dashed", another_color="red"
+            ),
+            DataObject(
+                color="orange",
+                shape="triangle",
+                pattern="dashed",
+                another_color="yellow",
+            ),
+        )
+        == 0.4
+    )
+
+
+def test_case_min_missing_properties() -> None:
+    assert (
+        evaluate.case_min(
+            mapping4,
+            DataObject(),
+            DataObject(color="orange", shape="triangle", pattern="dashed"),
+        )
+        == 0
+    )
+    assert (
+        evaluate.case_min(
+            mapping4,
+            DataObject(color="orange", shape="triangle", pattern="dashed"),
+            DataObject(),
+        )
+        == 0
+    )
+
+
+def test_case_max() -> None:
+    assert (
+        evaluate.case_max(
+            mapping4,
+            DataObject(color="red", shape="triangle", pattern="dashed"),
+            DataObject(color="orange", shape="triangle", pattern="dashed"),
+        )
+        == 1
+    )
+    assert (
+        evaluate.case_max(
+            mapping4,
+            DataObject(color="red", another_color="red"),
+            DataObject(
+                color="orange",
+                another_color="yellow",
+            ),
+        )
+        == 0.8
+    )
+
+
+def test_case_max_missing_properties() -> None:
+    assert (
+        evaluate.case_max(
+            mapping4,
+            DataObject(),
+            DataObject(color="orange", shape="triangle", pattern="dashed"),
+        )
+        == 0
+    )
+    assert (
+        evaluate.case_max(
+            mapping4,
+            DataObject(color="orange", shape="triangle", pattern="dashed"),
             DataObject(),
         )
         == 0
