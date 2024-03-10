@@ -1,9 +1,21 @@
 [tool.poetry]
 name = "cbrlib"
-version = "2.0.4"
+version = "2.0.5"
 description = "Case Based Reasoning library for Python"
 authors = ["Christian Dein <christian.dein@dein-hosting.de>"]
-license = "LGPLv3"
+license = "OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: Implementation",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 readme = "README.md"
 packages = [{include = "cbrlib", from = "source"}]
 
