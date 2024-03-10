@@ -157,7 +157,10 @@ def test_case_min() -> None:
         evaluate.case_min(
             mapping4,
             DataObject(
-                color="red", shape="triangle", pattern="dashed", another_color="red"
+                color="red",
+                shape="triangle",
+                pattern="dashed",
+                another_color="red",
             ),
             DataObject(
                 color="orange",
