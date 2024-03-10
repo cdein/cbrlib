@@ -2,14 +2,13 @@ import csv
 import dataclasses
 import functools
 import json
-from pathlib import Path
 import sys
 import time
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any, Iterable, Iterator
 
 from cbrlib import casebase, evaluate
-from cbrlib.types import FacetConfig, FacetOrderCriteria
 from cbrlib.casebase import ReasoningRequest
 from cbrlib.evaluate import (
     Evaluator,
@@ -17,6 +16,7 @@ from cbrlib.evaluate import (
     WeightedPropertyEvaluatorMapping,
     FunctionCalculationParameter,
 )
+from cbrlib.types import FacetConfig, FacetOrderCriteria
 
 whiskey_colours = [
     "straw",  # "Stroh",

@@ -1,15 +1,18 @@
 [tool.poetry]
 name = "cbrlib"
-version = "2.0.0"
+version = "2.0.2"
 description = "Case Based Reasoning library for Python"
 authors = ["Christian Dein <christian.dein@dein-hosting.de>"]
 license = "LGPLv3"
 readme = "README.md"
 packages = [{include = "cbrlib", from = "source"}]
 
+
+[tool.poetry.urls]
+Repository = "https://github.com/cdein/cbrlib.git"
+
 [tool.poetry.dependencies]
 python = "^3.10"
-
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.2.0"
