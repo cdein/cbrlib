@@ -4,7 +4,7 @@ Case Based Reasoning library for Python
 
 This library provides the possibility to integrate with native python. Basic implemetation can use instances of Python classes to calculate similarity between those objects.
 
-Please also take a look at the (examples)[https://github.com/cdein/cbrlib/tree/main/examples].
+Please also take a look at the [examples](https://github.com/cdein/cbrlib/tree/main/examples).
 
 ```python
 import dataclasses
