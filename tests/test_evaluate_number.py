@@ -1,11 +1,12 @@
 import pytest
 
-from cbrlib import evaluate
-from cbrlib.evaluate import (
+from cbrlib import (
     FunctionCalculationParameter,
     NumericEvaluationOptions,
     NumericInterpolation,
+    types,
 )
+from cbrlib import evaluate
 
 
 def test_calculate_distance() -> None:
@@ -29,12 +30,12 @@ def test_is_less() -> None:
 
 
 def test_interpolate_polynom_linearity_zero() -> None:
-    assert evaluate._interpolate_polynom(0.8, 0) == 0
+    assert types._interpolate_polynom(0.8, 0) == 0
 
 
 def test_interpolate_polynom_linearity_one() -> None:
     for i in [i / 10 for i in range(11)]:
-        assert evaluate._interpolate_polynom(i, 1) == 1 - i
+        assert types._interpolate_polynom(i, 1) == 1 - i
 
 
 def test_interpolate_polynom() -> None:
@@ -52,18 +53,16 @@ def test_interpolate_polynom() -> None:
         0.0,
     ]
     for i in range(11):
-        assert evaluate._interpolate_polynom(i / 10, 0.5) == pytest.approx(
-            expected_values[i]
-        )
+        assert types._interpolate_polynom(i / 10, 0.5) == pytest.approx(expected_values[i])
 
 
 def test_interpolate_root_linearity_zero() -> None:
-    assert evaluate._interpolate_root(0.8, 0) == 1
+    assert types._interpolate_root(0.8, 0) == 1
 
 
 def test_interpolate_root_linearity_one() -> None:
     for i in [i / 10 for i in range(11)]:
-        assert evaluate._interpolate_root(i, 1) == 1 - i
+        assert types._interpolate_root(i, 1) == 1 - i
 
 
 def test_interpolate_root() -> None:
@@ -81,19 +80,19 @@ def test_interpolate_root() -> None:
         0.0,
     ]
     for i in range(11):
-        assert evaluate._interpolate_root(i / 10, 0.5) == pytest.approx(
+        assert types._interpolate_root(i / 10, 0.5) == pytest.approx(
             expected_values[i], rel=1e-2
         ), f"Value at index {i} doesn't fit to expectation."
 
 
 def test_interpolate_sigmoid_linearity_zero() -> None:
-    assert evaluate._interpolate_sigmoid(0.8, 0) == 0
-    assert evaluate._interpolate_sigmoid(0.4, 0) == 1
+    assert types._interpolate_sigmoid(0.8, 0) == 0
+    assert types._interpolate_sigmoid(0.4, 0) == 1
 
 
 def test_interpolate_sigmoid_linearity_one() -> None:
     for i in [i / 10 for i in range(11)]:
-        assert evaluate._interpolate_sigmoid(i, 1) == 1 - i
+        assert types._interpolate_sigmoid(i, 1) == 1 - i
 
 
 def test_interpolate_sigmoid() -> None:
@@ -111,7 +110,7 @@ def test_interpolate_sigmoid() -> None:
         0.0,
     ]
     for i in range(11):
-        assert evaluate._interpolate_sigmoid(i / 10, 0.5) == pytest.approx(
+        assert types._interpolate_sigmoid(i / 10, 0.5) == pytest.approx(
             expected_values[i]
         ), f"Value at index {i} doesn't fit to expectation."
 
@@ -129,17 +128,15 @@ def test_function_calculation_paramter_get_interpolation() -> None:
         interpolation=NumericInterpolation.POLYNOM,
     )
     assert parameters.interpolation == NumericInterpolation.POLYNOM
-    assert parameters.get_interpolation() is evaluate._interpolate_polynom
+    assert parameters.get_interpolation() is types._interpolate_polynom
     parameters = FunctionCalculationParameter(
         interpolation=NumericInterpolation.ROOT,
     )
     assert parameters.interpolation == NumericInterpolation.ROOT
-    assert parameters.get_interpolation() is evaluate._interpolate_root
-    parameters = FunctionCalculationParameter(
-        interpolation=NumericInterpolation.SIGMOID
-    )
+    assert parameters.get_interpolation() is types._interpolate_root
+    parameters = FunctionCalculationParameter(interpolation=NumericInterpolation.SIGMOID)
     assert parameters.interpolation == NumericInterpolation.SIGMOID
-    assert parameters.get_interpolation() is evaluate._interpolate_sigmoid
+    assert parameters.get_interpolation() is types._interpolate_sigmoid
 
 
 def test_evaluation_options() -> None:
@@ -170,30 +167,22 @@ def test_numeric_evaluation_unexpected_distance() -> None:
 
 
 def test_numeric_evaluation_equality() -> None:
-    options = NumericEvaluationOptions(
-        0, 10, if_less=FunctionCalculationParameter(equal=0.1)
-    )
+    options = NumericEvaluationOptions(0, 10, if_less=FunctionCalculationParameter(equal=0.1))
     for i in range(11):
         assert evaluate.numeric(options, 10, 9 + (i / 10)) == 1
     assert evaluate.numeric(options, 8.9999, 10) < 1
-    options = NumericEvaluationOptions(
-        0, 10, if_more=FunctionCalculationParameter(equal=0.1)
-    )
+    options = NumericEvaluationOptions(0, 10, if_more=FunctionCalculationParameter(equal=0.1))
     for i in range(11):
         assert evaluate.numeric(options, 9 + (i / 10), 10) == 1
     assert evaluate.numeric(options, 10, 8.9999) < 1
 
 
 def test_numeric_evaluation_tolerance() -> None:
-    options = NumericEvaluationOptions(
-        0, 10, if_less=FunctionCalculationParameter(tolerance=0.1)
-    )
+    options = NumericEvaluationOptions(0, 10, if_less=FunctionCalculationParameter(tolerance=0.1))
     assert evaluate.numeric(options, 10, 9.0001) > 0
     for i in range(9, -1, -1):
         assert evaluate.numeric(options, 10, i) == 0
-    options = NumericEvaluationOptions(
-        0, 10, if_more=FunctionCalculationParameter(tolerance=0.1)
-    )
+    options = NumericEvaluationOptions(0, 10, if_more=FunctionCalculationParameter(tolerance=0.1))
     assert evaluate.numeric(options, 9.0001, 10) > 0
     for i in range(9, -1, -1):
         assert evaluate.numeric(options, i, 10) == 0

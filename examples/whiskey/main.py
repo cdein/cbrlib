@@ -9,14 +9,15 @@ from pathlib import Path
 from typing import Any, Iterable, Iterator
 
 from cbrlib import casebase, evaluate
-from cbrlib.casebase import ReasoningRequest
-from cbrlib.evaluate import (
+from cbrlib import (
     Evaluator,
-    NumericEvaluationOptions,
-    WeightedPropertyEvaluatorMapping,
+    FacetConfig,
+    FacetOrderCriteria,
     FunctionCalculationParameter,
+    NumericEvaluationOptions,
+    ReasoningRequest,
+    WeightedPropertyEvaluatorMapping,
 )
-from cbrlib.types import FacetConfig, FacetOrderCriteria
 
 whiskey_colours = [
     "straw",  # "Stroh",
