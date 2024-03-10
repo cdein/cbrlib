@@ -1,0 +1,553 @@
+distillery;age;proof;sweetness;peatiness;availability;colour;nose;flavour_palette;finish
+Mortlach;12;43;7;7;2;full-amber;rich;big-body;long
+Aberlour;0;59.6;7;4;4;mid-amber;full-body;rich;long
+Loch Lomond;9;60.5;6;4;2;straw;full;medium-sweet;sweet
+Glenturret;25;43;6;3;1;straw;fresh;full-body;long
+Convalmore ;33;40;8;5;4;pale-straw;sweet;medium-sweet;spice
+Rosebank;12;43;2;4;6;straw;medium-body;light;smooth
+Fettercairn;22;43;3;6;2;deep-amber;big;good-body;long
+Laphroaig;12;45;1;10;1;pale-gold;big-body;dry;long
+Glenglassaugh;13;59.8;8;4;2;straw;full-body;fresh;long
+Glendronach;18;43;6;3;1;deep-amber;full;big-body;long
+Glenesk;17;61.8;4;6;1;full-amber;full;medium-sweet;fresh
+The Glenlivet;21;40;7;4;6;mid-amber;full-body;medium-sweet;long
+Balvenie;12;40;7;3;7;full-amber;full;medium-sweet;fresh
+Rosebank;10;43;2;5;2;pale-straw;fresh;dry;long
+Clynelish;19;43;4;7;2;pale-straw;close;medium-dry;long
+Glen Grant;21;40;5;4;3;amber;fruit;medium-sweet;smooth
+Highland Park;14;46;5;6;2;straw;big-body;big-body;long
+Longmorn;12;58.6;8;3;1;pale;sweet;sweet;long
+Ardbeg;30;40;1;9;1;amber;big;big;long
+Glenturret;36;40;6;3;1;pale;rich;medium-dry;long
+Caol Ila;13;46;2;9;2;straw;full;big-body;dry
+Ben Wyvis;34;51;7;4;1;amber;full-body;soft;long
+The Glenlivet;12;40;8;4;6;amber;sweet;medium-sweet;long
+Laphroaig;15;46;1;10;2;straw;big-body;powerful;long
+Old Elgin (Vatted Malt);8;40;7;6;4;mid-amber;medium;rich;fresh
+Linkwood;21;40;8;6;3;deep-amber;smooth;sweet;long
+Glen Albyn;39;40;7;4;1;peat;sweet;sweet;fine
+Speyside;8;40;7;4;4;rich;full;medium-dry;long
+Bunnahabhain;23;46;3;6;2;pale-straw;medium-body;big-body;long
+Glen Grant;18;46;5;4;4;full-amber;full;medium-dry;long
+Fettercairn;0;40;4;4;0;pale-straw;light;dry;clean
+Glen Garioch;8;43;4;5;2;straw;fresh;medium-dry;spirit
+Glen Rothes;8;40;8;3;4;full;full-body;medium-sweet;warm
+Miltonduff;27;40;6;4;3;amber;medium-body;round;long
+Linkwood;17;64.2;7;5;2;pale-amber;medium-sweet;big-body;long
+Strathisla;18;57.8;6;7;3;amber;full-body;smoke;long
+Tomatin;10;43;6;5;5;honey;light;light;smooth
+The Glenlivet;26;57.7;7;4;2;deep-amber;round;medium-sweet;long
+Sendai;12;45;6;6;4;full-amber;big;big-body;long
+St. Magdalene ;22;40;3;3;1;straw;good-body;smooth;long
+Glen Keith;20;43;6;3;6;pale-amber;medium-body;medium-sweet;rich
+Glenesk;25;60.1;3;7;1;pale-straw;medium-dry;good-body;long
+Clydesdale;100;45;7;3;0;dark-amber;full-body;round;long
+Mortlach;12;43;6;6;2;straw;big-body;medium-sweet;long
+Port Ellen;16;59;2;9;2;pale-straw;big-body;big;long
+The Macallan;18;43;7;4;10;amber;big-body;full-body;long
+Inchgower;36;61.6;7;4;1;mid-amber;sweet;medium-sweet;rich
+Glenlossie;16;43;7;5;1;pale-straw;fresh;medium-sweet;long
+Bowmore;0;40;1;8;9;light-amber;full;dry;long
+Glenfiddich;18;43;8;3;4;straw;rich;medium-swet;good
+Glen Scotia;14;40;4;3;3;straw;clean;round;long
+Tamnavulin;12;40;7;4;3;straw;dark;dark;smooth
+Glenlochy;30;52.2;3;6;1;mid-amber;light;dry;long
+Ardbeg;24;43;1;10;4;full-amber;full;big-body;long
+Pittyvaich;18;53.3;8;2;2;pale-straw;fresh;sweet;long
+Tullibardine;10;40;3;6;5;straw;full;dry;pepper
+Dallas Dhu;18;60.8;4;3;1;mid-amber;medium-body;medium-dry;dry
+Aberlour;26;43;8;3;4;mid-amber;full;soft;long
+Glenglassaugh;19;40;5;4;4;mid-amber;full;medium-dry;long
+Cragganmore;24;40;7;7;3;amber;full-body;rich;long
+Benrinnes;15;43;8;4;4;amber;medium-body;medium-sweet;sweet
+Karuizawa;15;40;4;6;3;amber;fresh;medium-dry;long
+Ord;12;40;7;5;0;gold;full;full;smooth
+Isle Of Jura;21;40;3;6;3;amber;rich;soft;long
+Aberlour;15;43;7;3;4;deep-amber;medium-sweet;medium-sweet;long
+Caol Ila;15;43;2;9;5;straw;full;big;long
+Balmenach;31;40;5;7;2;amber;smoke-peat;dry;dry
+Oban;14;43;5;7;7;pale-straw;medium-sweet;smooth;smooke
+North Port;17;64.1;4;6;3;pale-amber;light;big;long
+Dalmore;11;57.2;6;6;1;dark;full;big-body;long
+Glen Mhor;12;43;4;6;0;straw;medium-body;dry;long
+Glenury;14;43;6;3;1;pale-straw;light;medium-sweet;long
+Longrow;25;46;3;7;2;amber;big-body;medium-dry;long
+Yamazaki;12;43;2;5;3;pale-amber;medium-sweet;dry;dry
+Chichbu;8;43;9;2;2;mid-amber;medium-sweet;sweet;sweet
+Sprinbank;25;46;7;6;2;peat;rich;full;long
+The Old Man Of Hoy;0;43;6;4;3;mid-amber;medium-body;medium-body;long
+The Bennachie (Vatted Malt);10;43;6;5;2;mid-amber;medium-body;medium-sweet;long
+Auchentoshan;10;40;4;4;5;pale-straw;fresh;light;good
+Bruichladdich;32;49;4;4;0;dark;dark;soft;long
+Sprinbank;9;61.2;5;6;4;pale;young;dry;spice
+Glen Scotia;16;57.6;5;6;2;pale-amber;medium-body;rich;tang
+Glentauchers;23;40;7;3;4;light;rich;nut;fresh
+Sprinbank;21;46;8;5;5;deep-amber;fruit;smooth;fine
+Ardbeg;35;52;1;10;1;deep-amber;big-body;big;long
+Macduff;20;43;6;4;2;pale;light;medium-dry;delicate-peat
+Speyburn;15;60.1;7;5;4;straw;medium-sweet;medium-sweet;sweet
+Brora;21;43;3;8;2;pale-amber;big-body;medium-dry;long
+The Glenlivet;15;57;8;6;4;amber;full;rich;big-body
+Bowmore;12;40;0;8;7;full;light-peat;smooth;good
+Royal Brackla;10;43;7;5;6;pale-straw;fresh;round;long
+Glendronach;12;40;5;6;6;straw;full;medium-dry;soft
+Ardbeg;10;46;2;10;8;amber;big-body;full-body;long
+Caol Ila;10;43;2;10;2;straw;big-body;full-body;long
+Dufftown;16;55.7;7;3;2;amber;full-body;medium-dry;long
+Knockando;20;43;7;3;7;straw;medium-body;good-body;long
+Teaninich;10;43;7;5;6;straw;fresh;medium-dry;clean
+Sprinbank;10;55.8;7;4;1;mid-amber;dry;big-body;tang
+Glen Rothes;19;43;8;3;0;pale-straw;soft;sweet;sweet
+Bowmore;21;43;2;8;5;mid-amber;big-body;big;long
+Balblair;16;43;6;4;6;amber;full-body;soft;long
+Isle Of Jura;10;40;3;7;9;amber;medium-body;big-body;long
+Dalmore;12;40;6;6;8;full;fresh;good-body;smooth
+Bladnoch;22;50;8;2;2;amber;medium-body;sweet;long
+The Macallan;18;43;8;3;2;rich;medium-sweet;medium-dry;clean
+Glenfarclas;15;46;9;4;6;gold;full;sweet;sweet
+Black Ribbon (Vatted Malt);0;40;7;7;1;mid-amber;medium-body;full-body;full
+Glen Moray;12;40;7;3;7;pale-gold;clean;light;delicate
+Port Ellen;32;40;2;9;2;peat;big-body;big;long
+Clynelish;14;54;3;7;2;straw;full-body;dry;long
+Strathisla;12;43;5;5;6;mid-amber;big;medium-dry;long
+Aberfeldy;25;40;5;6;4;mid-amber;round;medium-dry;long
+Highland Park;10;58.6;2;7;3;pale-amber;fresh;smooth;big
+Poit Dhubh (Vatted Malt);12;40;6;4;4;amber;medium-sweet;smooth;long
+Glenmorangie;0;43;3;3;5;pale-amber;full-body;sweet;long
+Glen Garioch;12;40;4;5;6;mid-amber;medium-body;medium-dry;long
+Pittyvaich;12;43;4;6;6;amber;round;medium-dry;long
+Tamdhu;0;40;7;4;8;straw;medium-body;medium-sweet;short
+Kinclaith;36;40;6;3;2;amber;medium-body;medium-sweet;long
+Glengoyne;25;47;6;0;3;straw;fresh;fresh;medium-dry
+Teaninich;17;43;9;3;1;pale-straw;full-body;sweet;long
+Imperial;14;64.9;6;5;4;pale-straw;warm;warm;long
+MacDonald's Glencoe (Vatted Malt);8;58;4;7;2;mid-amber;full-body;medium-dry;long
+Auchriosk;13;59.8;6;3;1;water;young;young;long
+Dallas Dhu;24;59.7;4;6;2;amber;mature;big-body;long
+Auchentoshan;0;43;2;4;4;deep-amber;full;rich;long
+Knockdhu;21;57.7;7;3;2;pale-amber;full-body;medium-sweet;long
+Glen Grant;31;58.4;6;4;1;pale-amber;full-body;full;long
+Glenfarclas;40;43;8;4;0;deep;full-body;medium-sweet;long
+Blair Athol;8;40;5;5;0;straw;fresh;sweet;good
+Glenkinchie;10;43;2;5;7;pale-straw;fresh;dry;long
+Poit Dhubh (Vatted Malt);21;43;5;4;3;mid-amber;rich;medium-dry;long
+Linkwood;12;43;7;5;6;straw;medium-sweet;weight;long
+Glenmorangie;27;0;4;6;1;full-amber;rich;soft;long
+Ardmore;18;46;8;6;4;full-amber;light;malt;cream
+Bowmore;17;43;2;8;6;full;rich;round;soft
+Glen Garioch;21;43;4;5;5;pale;medium-sweet;hfull-body;smoke
+Millburn;18;58.9;5;7;1;pale-amber;medium;round;long
+Caperdonich;23;40;8;8;3;pale-straw;sweet;sweet;young
+Pittyvaich;12;56.6;4;7;2;straw;peat;medium-dry;long
+Bowmore;25;43;3;7;3;deep-amber;full-body;full-body;long
+Highland Park;18;52.1;2;6;2;pale-amber;good-body;dry;big
+Highland Park;32;40;3;7;4;deep-amber;full-body;big-body;full
+Tobermory;18;43;2;8;2;straw;medium-body;medium-body;long
+Clynelish;9;61;6;5;1;straw;fresh;medium-sweet;long
+Sprinbank;18;43;7;4;1;pale-amber;full-body;fresh;long
+Dalmore;12;59.5;6;6;1;pale;medium-body;medium-sweet;long
+Loch Lomond;9;64;4;3;2;pale;young;medium-sweet;earth
+Dufftown;10;40;8;4;0;straw;light;medium-sweet;long
+Ladyburn;20;46;4;4;1;pale-straw;malt;dry;smoke
+Glenfiddich;0;51;8;6;4;straw;fresh;medium-sweet;long
+Glenury;12;40;2;7;2;mid-amber;medium-body;dry;long
+Cragganmore;18;40;6;7;4;mid-amber;full;medium-dry;long
+The Macallan;20;53.9;5;6;2;deep-amber;full-body;medium-sweet;nut
+Longrow;10;46;4;7;2;amber;big-body;big;long
+Tormore;10;40;8;3;6;pale-gold;elight;sweet;fine
+St. Magdalene ;37;40;1;4;2;light;fresh;dry;dry
+Strathisla;21;40;8;4;4;amber;medium-sweet;medium-dry;long
+Glengoyne;17;59.1;6;0;1;deep-amber;full-body;medium-sweet;long
+Glen Moray;12;40;6;4;6;pale-amber;medium-body;medium-dry;rich
+Glenury;15;62.3;4;2;2;pale;full-body;medium-dry;long
+Glenturret;21;40;7;3;1;light;rich;medium-sweet;fresh
+Bowmore;38;50;2;7;1;deep;big-body;big;long
+Glenlochy;22;61.4;7;4;1;amber;light;big-body;long
+Glen Mhor;8;57;4;4;2;straw;light-peat;medium-sweet;spice
+Glentromie;12;40;6;3;4;mid-amber;light;sweet;long
+Glenmorangie;0;43;5;4;4;mid-amber;fresh;medium-dry;long
+Sprinbank;10;43;7;5;2;pale-straw;full-body;full-body;long
+Ben Nevis;15;63;5;6;2;full-amber;dry;big;long
+Pittyvaich;12;54;5;7;3;medium;medium-body;medium-dry;cream
+Allt-a-Bhainne;22;60.5;8;6;1;deep-amber;full;medium-sweet;smoke
+Dailuaine;28;40;5;6;3;amber;soft;soft;long
+Glen Rothes;15;43;7;3;5;mid-amber;rich;full-body;long
+Highland Park;21;56.5;4;6;2;deep-amber;big-body;big;long
+Coleburn;37;40;8;5;2;warm;sweet;medium-sweet;smooth
+Bunnahabhain;12;40;3;6;9;straw;distinct;smooth;smooth
+Ben Nevis;30;60.5;5;6;2;pale-amber;full;medium-sweet;long
+Benrinnes;16;43;6;6;2;pale-straw;mash;medium-sweet;long
+Royal Lochnagar;0;43;8;3;3;deep-amber;rich;full;light
+Mortlach;19;59.3;7;6;2;deep-amber;big-body;medium-sweet;long
+Mannochmore;10;40;4;6;5;deep;full;full-body;long
+Ben Nevis;10;46;5;6;6;mid-amber;fresh;full;long
+Tantallan;10;40;7;6;2;pale-straw;fresh;medium-sweet;long
+The Macallan;18;40;7;4;2;deep-amber;full-body;full-body;long
+Yamazaki;10;40;7;3;4;pale-amber;light;medium-sweet;long
+Glentauchers;16;63.8;5;6;4;straw;fresh;medium-sweet;long
+Glen Spey;8;40;7;3;0;pale-amber;light;medium-sweet;sweet
+Dalmore;30;54.5;6;5;2;straw;full-body;big-body;long
+Eileandour;10;40;7;3;2;amber;rich;fresh;long
+Vintage Single Islay Malt;0;40;1;9;1;deep-amber;big-body;dry;long
+Glenturret;27;40;6;4;1;mid-amber;full;good-body;clean
+Tomatin;13;60.5;6;5;1;honey;light;light;smooth
+The Macallan;11;43;8;3;2;straw;fresh;full;long
+MacPhail's;10;40;6;6;4;mid-amber;light;medium-dry;fresh
+Glenfarclas;30;43;6;4;2;full-amber;big-body;big-body;long
+Glen Grant;5;40;4;4;4;gold;light;dry;long
+Braeval;15;43;7;5;2;deep-amber;full-body;round;long
+Glenturret;18;40;7;3;4;straw;rich;round;smooth
+Glenturret;12;40;7;3;6;straw;rich;rich;long
+Dalwhinnie;8;40;5;7;2;light;light;round;good
+Blair Athol;18;50.4;5;5;1;straw;light-body;medium-sweet;long
+Ardbeg;32;49;1;10;2;deep-amber;big;dry;long
+Clynelish;28;50.7;3;6;2;mid-amber;full-body;dry;long
+Glen Rothes;27;51.3;7;3;1;dark-amber;big-body;big;long
+Banff;34;43;4;5;2;deep-amber;big;big-body;long
+Glen Garioch;10;40;4;5;6;bright;delicate-peat;peat;good
+Highland Park;19;43;3;5;2;pale;fresh;fresh;long
+St. Magdalene ;10;62.3;2;2;2;pale-straw;fresh;medium-dry;long
+Glenlossie;10;43;6;3;6;pale-straw;fresh;fresh;long
+Bruichladdich;21;43;3;6;4;light;light;medium-body;tang
+Bruichladdich;10;40;2;7;7;pale-gold;delicate-peat;full;long
+Loch Lomond;0;40;7;4;4;amber;full-body;sweet;long
+Port Ellen;14;59.7;0;9;3;mid-amber;big;big;long
+Glenmorangie;18;43;4;4;6;honey;fresh;smooth;medium-dry
+The Macallan;10;57;8;4;10;mid-amber;medium-body;sweet;long
+The Macallan;30;43;5;6;2;deep-amber;full;big-body;dry
+The Glenlivet;12;40;8;4;10;straw;leaf;sherry;long
+Craigellachie;14;43;8;3;6;straw;fresh;fresh;long
+Glenury;12;40;3;6;0;gold;light;light;smoke
+Royal Brackla;32;40;6;6;3;pale;good-body;medium-dry;oak
+Glenmorangie;39;43;4;4;1;pale;rich;sweet;long
+Caol Ila;10;46;1;9;1;pale-straw;rich;dry;long
+Tamnavulin;18;46;8;3;1;dark;nut;smooth;smooth
+Auchriosk;26;40;7;4;1;amber;rich;full-body;long
+Benriach;33;40;6;3;4;pale-straw;sweet;sweet;spice
+Bowmore;10;40;0;8;8;mid-amber;full;dry;long
+Blair Athol;12;43;7;6;6;pale;full;medium-sweet;fresh
+Auchentoshan;21;43;2;4;3;mid-amber;soft;dry;sweet
+Clynelish;14;43;4;6;6;pale-amber;rich;smoke;long
+Strathmill;12;55.5;6;3;0;rich;light;medium-sweet;long
+Glenturret;14;40;6;3;2;pale-amber;good-body;soft;medium-sweet
+Glen Garioch;18;40;4;5;3;straw;medium-body;soft;good
+Dalmore;21;43;6;5;6;mid-amber;fresh;full-body;long
+The Macallan;10;40;7;4;10;mid-amber;full;sweet;long
+Yamazaki;8;57;6;3;1;amber;char;medium-dry;long
+Sprinbank;10;46;7;6;6;amber;big-body;big-body;long
+Balmenach;21;62.6;6;5;4;pale-straw;mash;medium-sweet;short
+Glenmorangie;0;43;4;3;5;amber;big-body;smooth;long
+Cragganmore;17;53.8;6;7;2;pale;full-body;medium-dry;long
+Bushmills;12;40;6;0;1;mid-amber;clean;medium-sweet;long
+Yoichi;12;45;7;4;4;amber;full-body;medium-sweet;long
+Talisker;14;64.3;2;9;2;straw;big;big;long
+Aberfeldy;12;40;5;6;5;amber;medium-bodied;medium-dry;long
+Glen Garioch;15;43;3;6;6;straw;medium-body;big-body;long
+Ardbeg;27;43;2;10;3;amber;full-body;dry;long
+Glenmorangie;10;57.6;4;4;1;pale-amber;sweet;rich;fresh
+Sprinbank;12;57;5;6;3;deep-amber;full-body;big-body;long
+Tomintoul;23;54.3;7;4;1;straw;medium-body;medium-sweet;long
+Glenturret;15;40;7;3;4;gold;big-body;full;smooth
+Banff;17;60.5;6;6;1;mid-amber;fresh;fresh;long
+Glen Grant;12;43;6;4;2;straw;light;light;dry
+Aberlour;15;40;7;3;6;mid-amber;full-body;smooth;long
+Benromach;28;40;7;4;2;amber;soft;big;long
+Caperdonich;30;40;7;3;0;honey;full;full;long
+Port Ellen;31;40;1;9;3;bright;smoke;full;dry
+Bunnahabhain;25;46;5;6;0;straw;medium-sweet;medium-sweet;rich
+Tambowie  (Vatted Malt) ;8;40;8;3;2;mid-amber;fresh;medium-sweet;long
+Glen Eason;10;40;3;7;2;full-amber;fresh;full-body;long
+Balvenie;15;50.4;7;3;4;bright;full-body;medium-sweet;long
+Highland Park;12;40;2;7;9;pale-straw;peat;balance;long
+Aberlour;0;43;8;3;3;deep-amber;full-body;rich;long
+Glenlossie;33;40;7;4;2;straw;medium-body;rich;long
+Glengoyne;25;48.5;7;0;1;straw;full;medium-dry;long
+Benromach;12;40;7;4;5;amber;medium-body;medium-sweet;long
+Glenfiddich;21;43;9;5;1;pale-straw;fresh;soft;herb
+Inchgower;13;43;7;3;1;pale-amber;good-body;clean;long
+Glen Flagler;23;50.1;3;2;1;pale;fresh;medium-dry;long
+Poit Dhubh (Vatted Malt);12;46;7;7;3;light;medium-body;full-body;long
+Yamazaki;18;43;4;6;3;amber;medium-dry;medium-dry;long
+Shirakawa;27;55;6;4;1;amber;full;medium-sweet;long
+Dailuaine;23;46;4;6;2;pale-straw;medicinal;sweet;fine
+Clynelish;12;40;6;5;4;mid-amber;clean;good-body;long
+The Glenlivet;18;43;6;5;3;deep-amber;full-body;big-body;rich
+Dalmore;30;45;6;5;4;full;big-body;medium-dry;long
+Scapa;23;56.3;8;6;1;straw;full-body;sweet;long
+Royal Brackla;18;43;6;6;2;amber;full-body;big;long
+The Macallan;25;43;7;5;4;full-amber;full-body;medium-dry;long
+Pride Of The Lowlands (Vatted Malt);12;40;3;2;4;amber;fresh;smooth;long
+Convalmore ;31;48.9;6;5;2;mid-amber;smoke;big-body;fresh
+The Macallan;7;40;8;4;8;light;sweet;medium-sweet;long
+Finlaggan;12;43;2;8;2;pale-amber;dry;dry;full
+Glenfarclas;19;57;8;4;2;amber;full-body;full-body;long
+Aberlour;0;57.1;8;3;3;deep-amber;full-body;sweet;long
+Lochside;21;46;4;6;2;amber;fresh;medium-dry;long
+Linkwood;14;58.5;3;6;2;deep-amber;big-body;big;soft
+Yoichi;15;45;3;7;2;mid-amber;delicate;dry;long
+St. Magdalene ;23;58.1;2;3;1;amber;gentle;big-body;long
+Ben Nevis;26;58;4;5;3;mid-amber;medium-sweet;medium-dry;long
+Blair Athol;23;57.1;6;5;1;mid-amber;medium-sweet;soft;long
+Glenlossie;17;59;6;6;2;full-amber;big-body;round;long
+Glen Keith;22;45.6;7;3;1;bright;full;rich;long
+Glen Rothes;16;46;8;3;2;deep;fruit;full-body;long
+Royal Brackla;27;46;5;7;2;amber;big-body;big-body;long
+Killyloch;22;52.6;4;2;0;pale;medium-body;medium-dry;sweet
+Inchgower;14;43;7;3;6;straw;medium-sweet;smooth;long
+Sprinbank;30;46;8;6;2;full-amber;full;sweet;long
+Craigellachie;15;46;7;6;2;pale;pungent;heavy;good
+Scapa;19;40;2;4;4;mid-amber;fresh;dry;long
+Laphroaig;10;57.3;2;10;6;amber;big;smooth;long
+Ardmore;25;40;6;6;4;pale-amber;full;medium-bodied;sweet
+Deanston;12;40;5;6;6;amber;light;medium-dry;long
+Longmorn;15;45;6;4;6;mid-amber;rich;full-boudy;rich
+Blairfindy;20;51.8;8;4;2;amber;full-body;big-body;long
+The Macallan;18;43;6;3;1;rich;rich;sweet;long
+The Macallan;56;46.6;4;5;2;mid-amber;big;medium-dry;long
+Yoichi;10;45;5;5;2;amber;medium-body;medium-dry;long
+Benromach;15;40;7;5;4;amber;full;medium-dry;long
+Scapa;24;50.1;8;6;1;straw;sweet;sweet;smooth
+Dailuaine;16;43;5;7;6;deep;full;full-body;long
+Rosebank;13;58.9;2;5;2;pale-straw;dry;dry;long
+Highland Park;10;40;5;6;2;pale-amber;medium-dry;round;long
+Imperial;12;65;7;6;3;haze;full;sweet;long
+Lochside;10;40;3;5;1;light;light;medium-dry;leaf
+Dallas Dhu;24;60.6;4;4;2;pale-amber;medium-dry;oak;chew
+Bushmills;10;40;7;0;9;amber;fresh;medium-sweet;clean
+Lagavulin;23;43;1;9;6;deep-amber;dark;dry;long
+Deanston;21;40;4;6;3;full-amber;light;medium-dry;long
+Loch Lomond;10;40;4;6;4;amber;young;sweet;long
+Talisker;10;45.8;1;10;8;straw;pungent;peat;smoke
+Edradour;10;40;9;3;7;rich;sweet;smooth;butter
+Bladnoch;10;43;4;4;6;straw;fresh;fresh;fresh
+Pride Of Strathspey;12;40;8;3;4;amber;medium-sweet;medium-sweet;long
+Glenmorangie;0;43;6;3;1;mid-amber;soft;round;long
+Braeval;8;60;7;4;2;pale-straw;medium-dry;soft;clean
+Glenfiddich;12;40;8;5;10;straw;fresh;full-body;long
+Balvenie;10;40;8;3;8;straw;full;medium-dry;long
+Royal Lochnagar;12;40;8;4;0;pale-straw;sweet;sweet;smooth
+Inverleven;23;40;6;1;4;mid-amber;light;medium-sweet;ling
+Speyburn;31;40;8;5;4;rich;sweet;medium-sweet;mellow
+Glenmorangie;10;40;4;4;10;light;fresh;light;sweet
+Lagavulin;15;64.4;5;9;2;pale-amber;full;seaweed;long
+Benromach;33;40;7;4;2;mid-amber;fresh;medium-dry;long
+Tobermory;20;43;4;7;2;pale-amber;sweet;medium-dry;long
+Laphroaig;10;40;2;10;10;pale-amber;dry;character;linger
+Bowmore;13;46;2;8;2;straw;medium-body;big-body;long
+Fuji-Gotemba;15;40;4;3;1;amber;medium-dry;medium-dry;long
+Loch Lomond;10;40;6;4;4;amber;fresh;medium-sweet;long
+Auchriosk;10;40;7;5;8;mid-amber;full-body;medium-body;long
+Glenmorangie;10;57.2;5;4;4;amber;fresh;medium-sweet;long
+Oban;22;43;4;7;6;full-amber;full-body;full-body;long
+Karuizawa;17;40;3;6;1;amber;fresh;medium-dry;long
+Locke's;0;40;7;0;2;amber;fresh;fresh;long
+Scapa;14;43;6;5;0;pale-straw;round;medium-dry;long
+Sprinbank;15;46;7;5;6;light;rich;clean;long
+Sprinbank;28;53.2;7;5;2;full-amber;full-warm;medium-dry;powerful
+Strathmill;11;60.6;7;3;4;pale-straw;frersh;cereal;sweet
+Ardbeg;26;52.8;0;10;2;deep-amber;big-body;big-body;dry
+The Macallan;54;46.6;5;6;1;full-amber;full;medium-dry;long
+Cragganmore;12;40;6;7;9;amber;clean;full-body;long
+Lagavulin;15;63.3;3;8;1;deep-amber;full-body;big-body;long
+Hakushu;12;43;6;4;4;amber;light;medium-dry;long
+Inchgower;12;40;8;6;0;pale-gold;sweet;rich;deistinguish
+Aultmore;12;43;5;4;6;pale-straw;rich;medium-body;smooth
+Scapa;8;57;8;7;2;peat;spirit;sweet;good
+Benriach;10;43;6;3;7;pale-straw;fresh;medium-dry;rich
+Glengoyne;17;43;6;0;5;pale;rich;soft;spice
+Rosebank;33;51.7;5;3;2;pale-straw;malt;full-body;long
+Ardbeg;21;49.2;1;10;1;pale-amber;full-body;dry;long
+Cooley;0;40;5;6;4;mid-amber;full-body;medium-sweet;long
+Benromach;17;43;7;5;4;amber;medium-sweet;medium-sweet;long
+Dalmore;52;51.5;6;3;0;full;soft;full;long
+Glendullan;12;43;8;4;6;pale-straw;full;medium-dry;long
+The Glenlivet;12;40;8;4;6;mid-amber;soft;soft;long
+Glenturret;34;40;6;3;1;straw;medium-sweet;medium-sweet;long
+Bruichladdich;15;40;3;6;4;straw;rich;sweet;spicy
+Highland Park;25;53.5;4;6;4;deep-amber;full-body;soft;long
+The Glenlivet;12;40;3;6;4;amber;dumb;dry;long
+Longmorn;12;40;6;5;4;amber;medium-body;medium-dry;long
+Glen Moray;16;43;7;2;5;amber;fresh;round;smooth
+Glenfiddich;15;40;7;5;6;amber;full-body;big;long
+Aultmore;14;60.1;7;5;2;mid-amber;full;rich;long
+Balmenach;30;40;6;7;2;mid-amber;medium-sweet;medium-dry;long
+Glenallachie;12;40;7;4;0;pale;full;full-body;elegant
+Isle Of Jura;16;40;4;6;4;amber;full-body;full;long
+Glen Grant;15;40;6;4;5;peat;sweet;medium-sweet;smoke
+Glenfarclas;25;43;9;5;4;amber;full;full-flavour;fresh
+Glenfarclas;21;43;9;4;3;dark-amber;full;rich;smoke
+Highland Park;13;58;5;6;2;pale-straw;fresh;medium-sweet;long
+Ben Nevis;21;55.6;5;6;2;deep-amber;full-body;full-body;long
+Dalwhinnie;32;40;5;6;2;full-amber;medium;big-body;long
+Knockando;21;43;7;3;1;straw;light-peat;green;smooth
+Glen Grant;31;53.9;6;4;2;deep-amber;big-body;medig;long
+Ardbeg;26;55.3;1;10;2;deep-amber;big-body;powerful;long
+Glendronach;9;58.5;4;7;2;amber;full-body;full;long
+Talisker;38;53.6;2;9;1;deep-amber;deep;big;long
+The Macallan;15;43;7;4;9;mid-amber;full-body;sweet;long
+Linkwood;15;40;7;5;4;mid-amber;full-body;medium-sweet;smooth
+Tamdhu;42;40.8;6;4;2;amber;big-body;medium-dry;long
+Scapa;12;40;8;5;4;amber;fresh;sweet;long
+Glen Moray;13;56;6;3;1;pale-straw;medium-body;medium-body;fresh
+Millburn;11;59.7;7;4;3;mid-amber;medium-body;medium-sweet;sweet
+Cragganmore;11;59.8;7;5;2;straw;full-body;full-body;long
+Miltonduff;12;40;9;3;5;straw;medium;sweet;delicate
+Tobermory;7;60.9;7;7;2;pale-straw;big-body;big-body;long
+Ardbeg;15;43;2;10;8;amber;big;big-body;long
+Glenturret;10;57.1;6;4;1;pale-straw;full-body;full-body;smooth
+Ardbeg;11;46;1;10;2;straw;big;powerful;long
+Laphroaig;15;43;2;10;6;amber;peat;soft;long
+Imperial;16;43;5;7;0;pale-straw;full;dry;long
+Glen Moray;27;55.1;7;3;1;rich;full-body;medium-sweet;smooth
+Benrinnes;34;40;6;6;2;straw;sweet;medium-sweet;good
+Ord;12;40;6;5;6;mid-amber;fresh;medium-dry;long
+Dalwhinnie;15;43;7;5;8;straw;aroma;round;good
+Glen Albyn;30;40;7;5;4;amber;good-body;medium-sweet;clean
+Glen Moray;0;40;6;3;6;amber;fresh;dry;long
+Talisker;16;45.8;3;10;6;deep-amber;rich;big-body;long
+Sheep Dip (Vatted Malt);8;40;3;6;5;pale-amber;dry;dry;gentle
+Millburn;36;40;6;6;1;deep;wood;round;dry
+Blairmhor (Vatted Malt);8;40;4;7;3;pale-amber;clean;medium-dry;long
+Glenmorangie;0;43;4;3;5;deep-amber;medium-body;medium-body;long
+Tomintoul;12;43;7;3;4;peat;medium-sweet;medium-sweet;spirit
+Allt-a-Bhainne;13;43;9;4;1;straw;soft;soft;long
+Auchentoshan;0;40;2;7;7;straw;fresh;dry;perfume
+Tobermory;15;43;6;6;2;amber;full;pungent;long
+Fuji-Gotemba;12;40;5;3;1;full-amber;full-body;medium-dry;long
+Bowmore;15;43;2;8;5;amber;rich;full-body;long
+Mortlach;50;40;5;5;1;full-amber;full;full-body;long
+Glendullan;10;43;8;3;1;pale;sweet;sweet;fresh
+Longmorn;30;50;7;5;2;mid-amber;full;big-body;long
+Benromach;17;43;5;7;4;amber;fresh;medium-sweet;long
+Glenugie;36;40;7;4;2;full-amber;full;medium-sweet;clean
+Aberlour;21;43;7;6;5;bright;fresh;medium-dry;long
+Pittyvaich;13;58;4;7;4;deep-amber;big-body;big;spirit
+Bunnahabhain;17;58.4;3;5;2;full-amber;full;smooth;nut
+The Macallan;12;43;7;4;8;mid-amber;medium-sweet;big-body;long
+Glengoyne;10;40;5;0;9;pale-straw;round;round;long
+Fuji-Gotemba;0;40;5;3;2;amber;big-body;medium-sweet;long
+Laphroaig;26;43;1;10;1;amber;full-body;big;long
+Glengoyne;21;43;6;0;4;deep-amber;round;full-body;long
+Speyburn;21;61.9;7;6;4;deep;full-body;big-body;long
+Glenury;15;62.3;7;7;1;pale;medium-dry;rich;long
+North Port;32;40;7;6;1;gold;sweet;medium-sweet;long
+Bruichladdich;35;44.7;4;5;2;deep-amber;delicate;soft;long
+Benrinnes;14;43;7;5;1;pale-amber;full-body;bid-body;dry
+Cardhu;28;56;7;7;2;deep-amber;big-body;big;long
+Chichbu;8;60;3;7;2;mid-amber;dark;big-body;long
+Glenkinchie;16;43;4;5;6;honey;sweet;medium-dry;long
+MacPhail's;0;60.5;7;6;4;amber;full-body;full-body;long
+Glenmorangie;15;43;4;5;6;amber;full-body;dry;long
+Balblair;0;40;8;3;7;amber;full-body;sweet;long
+Tobermory;0;42;7;7;1;pale-straw;young;big-body;sweet
+Glengoyne;17;57.8;7;0;1;deep-amber;full;big-body;powerful
+Glen Albyn;12;43;7;2;0;pale-straw;light;medium-sweet;long
+Dufftown;15;43;8;3;6;pale-amber;medium-body;medium-sweet;clean
+Mortlach;16;43;7;5;6;deep-amber;full-body;full;long
+Glen Scotia;8;40;8;6;2;gold;peat;light;soft
+Glen Scotia;27;51.5;4;2;2;pale-straw;fresh;medium-dry;clean
+Glentromie;17;40;6;3;4;mid-amber;light;sweet;long
+Rosebank;12;46;4;5;2;pale;full-body;rich;long
+Mannochmore;12;43;5;3;6;pale;full;medium-dry;light
+Glen Rothes;24;46;7;4;2;straw;medium-body;full-body;long
+Glendullan;12;43;5;3;0;pale-gold;full;full;long
+Chichbu;10;59;6;6;2;amber;dark;medium-sweet;long
+Dallas Dhu;18;43;4;6;2;amber;full-body;smooth;long
+Dalwhinnie;27;45.5;5;4;1;pale-amber;full-body;good-body;long
+Macduff;10;40;6;4;6;amber;fresh;medium-sweet;long
+The Ileach;0;43;2;9;2;amber;big;big-body;long
+Auchriosk;21;43;7;5;4;amber;full-body;medium-sweet;long
+Glenallachie;43;43;7;3;2;pale-straw;medium-body;medium-sweet;sweet
+Ord;27;55.4;7;5;1;amber;full;fresh;dry
+Aberfeldy;15;43;7;7;6;straw;full;full;full
+Strathisla;8;40;8;3;2;amber;fruit;spice;good-body
+Longrow;10;46;4;7;2;amber;delicate;delicate;long
+Oak Port Cask;32;40;5;5;1;amber;medium-sweet;medium-dry;long
+Imperial;32;40;6;7;2;bright;medium-peat;medium-dry;smooth
+Glenmorangie;0;56.5;4;3;1;full-amber;medium-body;medium-dry;rich
+Cardhu;12;40;8;7;9;mid-amber;full-body;round;long
+Yoichi;0;40;3;3;5;pale-amber;light;light;long
+Pride Of Islay (Vatted Malt);12;40;1;10;4;mid-amber;full-body;big;full
+Auchriosk;12;59.3;8;3;1;pale-straw;fresh;sweet;smooth
+Pultney;15;59.9;7;5;6;straw;dry;rich;long
+Glenmorangie;19;53.2;4;4;1;mid-amber;full;medium-dry;long
+Mortlach;18;40;6;6;3;straw;medium-body;big-body;long
+Inverleven;30;60;2;3;0;pale-straw;full-body;full;long
+Royal Brackla;0;40;6;7;7;pale-straw;medium-body;medium-sweet;clean
+Caol Ila;22;43;2;9;2;pale-amber;big;dry;long
+Balmenach;12;43;7;5;6;deep-amber;full-body;full-body;long
+Pride Of Orkney (Vatted Malt);12;40;2;5;4;light;light;dry;clean
+Deanston;17;40;7;3;4;amber;full;medium-sweet;long
+Glenlossie;34;40;7;4;2;pale-gold;sweet;sweet;fruit
+Isle Of Arran;3;43;7;5;3;straw;fresh;sweet;long
+Glenburgie;36;57.6;7;5;3;deep-amber;big-body;rich;long
+Ben Nevis;22;46;3;6;2;deep-amber;spirit;dry;smooth
+Millburn;31;40;6;5;3;mid-amber;rich;medium-dry;soft
+Dufftown;12;43;7;4;1;pale;big-body;medium-dry;long
+Imperial;23;40;6;7;4;amber;full-body;medium-sweet;clean
+Caol Ila;28;40;2;9;2;bright;peat;dry;smoke
+Strathisla;13;60;7;4;2;straw;medium-sweet;medium-sweet;long
+Glengoyne;12;40;5;0;4;pale-straw;medium-body;medium-dry;long
+Glen Elgin;12;43;8;4;1;pale-gold;sweet;soft;smooth
+Glenmorangie;17;0;5;3;1;mid-amber;fresh;dry;long
+The Macallan;50;43;7;5;1;deep-amber;full-body;full-body;long
+Cooley;0;40;7;0;4;straw;fresh;medium-swet;long
+Tobermory;10;40;4;5;4;pale-amber;soft;medium-dry;smooth
+Dalmore;24;60.5;6;5;2;pale-straw;medium-body;medium-body;longe
+Glenturret;34;40;7;3;2;pale-straw;rich;rich;smooth
+Dallas Dhu;31;40;3;6;2;amber;rich;medium-dry;clean
+Dailuaine;31;40;3;6;3;straw;dry;smoke;smooth
+Bunnahabhain;17;43;4;6;2;pale-amber;fresh;medium-dry;long
+Coleburn;30;40;7;6;3;straw;medium-body;medium-dry;smoke
+Sprinbank;11;46;5;7;2;pale-amber;medium-body;medium-dry;long
+Bushmills;16;40;5;0;6;mid-amber;full-body;dry;long
+Glenburgie;32;40;3;1;2;mid-amber;light;light;clean
+Glenturret;17;53.7;8;4;2;pale-amber;sweet;sweet;long
+Ben Nevis;15;60.9;6;5;1;straw;full-body;soft;long
+Balmenach;18;43;5;7;1;pale-straw;medium-dry;medium-dry;long
+Dallas Dhu;28;40;6;4;2;straw;full;round;dry
+Glencadam;28;40;7;4;4;straw;rich;medium-body;light
+Sprinbank;7;59.1;7;5;1;deep;full-body;medium-dry;long
+Oak Brandy Cask;32;40;6;3;1;pale-amber;light;medium-sweet;long
+Ardbeg;17;40;2;10;8;amber;gentle;big-body;long
+Lammerlaw;10;43;6;1;2;pale-amber;fresh;medium-sweet;long
+Balvenie;21;43;5;4;5;mid-amber;soft;dry;long
+Littlemill;8;40;6;1;5;straw;young;fresh;rich
+Pultney;12;40;6;5;5;pale-straw;soft;medium-dry;clean
+Ballantine (Vatted Malt);12;40;7;4;3;deep-amber;full;full;long
+Yamazaki;25;43;2;3;4;dark;big-rich;dry;chew
+Knochdhu;12;43;6;7;4;straw;fresh;sweet;long
+Speyburn;10;40;8;2;7;pale-straw;fresh;fresh;long
+Bruichladdich;11;57.9;3;7;2;pale-straw;light;medium-body;long
+Ardbeg;28;40;1;10;2;amber;big-body;big;big
+Sprinbank;46;46;7;5;1;deep-amber;full-body;full;long
+Aberfeldy;40;43;6;6;1;straw;medium-sweet;smooth;long
+Glenburgie;54;40;5;6;1;deep-amber;big;big;long
+Glenfarclas;0;60;7;6;7;deep-amber;spirit;spirit;long
+Komagatake;10;40;7;3;2;amber;rich;smooth;long
+Teaninich;21;57.2;6;6;1;straw;medium-body;medium-dry;long
+Isle Of Jura;33;43;3;6;2;full-amber;big-body;big-body;long
+Caol Ila;19;43;1;9;2;pale-straw;full-body;full;long
+Brora;22;58.7;4;8;1;amber;big-body;big;long
+Raw Cask Blairfindy;0;57.6;8;3;2;rich;full-body;big-body;long
+Oak Brandy Cask;39;40;5;3;1;amber;medium-sweet;medium-dry;long
+Aberlour;10;40;7;4;10;deep-amber;full;full-body;good
+Glenturret;8;40;6;4;1;pale-straw;full;light;spice
+Glenburgie;42;40;7;5;2;pale-straw;wood;medium-sweet;oak
+The Glenlivet;21;40;6;7;4;full-amber;sweet;smooth;long
+Aberlour;12;61.8;8;4;1;pale;medium-body;soft;long
+Teaninich;18;43;7;5;1;straw;fresh;fresh;clean
+Kinclaith;20;46;6;3;1;pale-straw;sweet;cream;pepper
+Glencadam;12;43;6;4;1;deep-amber;full-body;big;long
+Yamazaki;15;45;2;5;1;dark;big;medium-dry;long
+Auchriosk;19;40;4;3;2;full-amber;rich;medium-body;dry
+Fettercairn;10;40;4;4;6;straw;full;dry;dry
+Deanston;25;55.8;4;3;2;straw;fresh;medium-dry;fresh
+Glenfiddich;18;43;8;4;2;straw;fresh;soft;clean
+Glen Albyn;37;40;7;4;1;full-amber;medium-sweet;rich;pepper
+Glen Elgin;26;57.3;8;4;2;pale-amber;full;n/a;long
+Karuizawa;13;58;3;7;1;deep-amber;full-body;big-body;long
+Lagavulin;16;43;3;10;10;deep-amber;distinct;big;long
+Glenfarclas;10;40;9;5;9;straw;rubber;sweet;spice
+Glendronach;15;40;7;4;6;deep-amber;full-body;full;long
+Royal Lochnagar;12;40;7;4;5;mid-amber;medium-body;soft;fresh

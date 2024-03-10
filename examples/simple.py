@@ -1,10 +1,3 @@
-# Case Based Reasoning the Pythonic Way
-
-Case Based Reasoning library for Python
-
-This library provides the possibility to integrate with native python. Basic implemetation can use instances of Python classes to calculate similarity between those objects.
-
-```python
 import dataclasses
 import functools
 from typing import Optional
@@ -79,4 +72,6 @@ def main() -> None:
         )
     )
 
-```
+
+if __name__ == "__main__":
+    main()

@@ -30,14 +30,14 @@ def infer(
         lambda c: Result(evaluator(request.query, c), c),
         casebase,
     )
-    sorted_results = sorted(
+    sort_results = sorted(
         evaluate_cases,
         key=lambda r: r.similarity,
         reverse=True,
     )
     calculate_results = filter(
         lambda r: r.similarity >= threshold,
-        sorted_results,
+        sort_results,
     )
     if request.facets is not None:
         relevant_facets = _make_relevant_facets(request.query, request.facets, getvalue)

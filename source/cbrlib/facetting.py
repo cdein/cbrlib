@@ -34,15 +34,19 @@ class FacetCollectingIterator(Iterator):
 
     @property
     def facets(self) -> Iterable[Facet]:
-        return [
-            Facet(
-                facet.name,
-                _to_facet_values(self._facet_collection[facet.name].values(), facet.order_by, facet.max_count),
-                _calculate_entropy(self._facet_collection[facet.name].values(), self._divider),
-            )
-            for facet in self._facets
-            if facet.name in self._facet_collection
-        ]
+        return sorted(
+            [
+                Facet(
+                    facet.name,
+                    _to_facet_values(self._facet_collection[facet.name].values(), facet.order_by, facet.max_count),
+                    _calculate_entropy(self._facet_collection[facet.name].values(), self._divider),
+                )
+                for facet in self._facets
+                if facet.name in self._facet_collection
+            ],
+            key=lambda f: f.entropy,
+            reverse=True,
+        )
 
 
 _order_by = {
