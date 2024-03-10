@@ -15,11 +15,11 @@ class DataObject:
     another_color: Optional[str] = None
 
 
-LOOKUP = {
+lookup = {
     "red": {"red": 1, "orange": 0.8, "yellow": 0.4},
     "orange": {"orange": 1, "red": 0.8, "yellow": 0.8},
 }
-LOOKUP_EVALUATOR = functools.partial(evaluate.table_lookup, LOOKUP)
+lookup_evaluator = functools.partial(evaluate.table_lookup, lookup)
 
 
 mapping1 = (
@@ -40,10 +40,10 @@ mapping3 = (
 )
 
 mapping4 = (
-    evaluate.PropertyEvaluatorMapping("color", LOOKUP_EVALUATOR),
+    evaluate.PropertyEvaluatorMapping("color", lookup_evaluator),
     evaluate.PropertyEvaluatorMapping("shape", evaluate.equality),
     evaluate.PropertyEvaluatorMapping("pattern", evaluate.equality),
-    evaluate.PropertyEvaluatorMapping("another_color", LOOKUP_EVALUATOR),
+    evaluate.PropertyEvaluatorMapping("another_color", lookup_evaluator),
 )
 
 
