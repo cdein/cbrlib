@@ -47,6 +47,7 @@ jobs:
         git commit -m "Version bump to pubish to PyPi"
         git push
     - name: Publish to PyPi
+      shell: bash
       env:
         PYPI_SECRET: ${{ secrets.PYPI_API_TOKEN }}
       run: |
