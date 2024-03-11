@@ -1,4 +1,4 @@
-[![Python application](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml/badge.svg)](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml)
+[![Python Library cbrlib - main branch](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml/badge.svg)](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml)
 # Case Based Reasoning the Pythonic Way
 
 Case Based Reasoning library for Python
@@ -12,7 +12,7 @@ import dataclasses
 import functools
 from typing import Optional
 
-from cbrlib import (
+from cbrlib impohttps://github.com/cdein/cbrlib/actions/workflows/python-app.ymlrt (
     Evaluator,
     FunctionCalculationParameter,
     NumericEvaluationOptions,
