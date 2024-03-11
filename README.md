@@ -1,3 +1,4 @@
+[![Python application](https://github.com/cdein/cbrlib/actions/workflows/python-app.yml/badge.svg)](https://github.com/cdein/cbrlib/actions/workflows/python-app.yml)
 # Case Based Reasoning the Pythonic Way
 
 Case Based Reasoning library for Python
