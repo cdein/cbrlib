@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -37,4 +37,16 @@ jobs:
         poetry run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        poetry run pytest --cov=cbrlib --cov-report term -s tests 
+        poetry run pytest --cov=cbrlib --cov-report term -s tests
+    - uses: actions/checkout@v3
+    - run: |
+        poetry version patch
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Version bump to pubish to PyPi"
+        git push
+    - name: Publish to PyPi
+      run: |
+        poetry config pypi-token.pypi {{ secrets.PYPI_API_TOKEN }}
+        poetry publish --build
