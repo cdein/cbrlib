@@ -37,4 +37,4 @@ jobs:
         poetry run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        poetry run pytest --cov=cbrlib --cov-report html -s tests 
+        poetry run pytest --cov=cbrlib --cov-report term -s tests 
