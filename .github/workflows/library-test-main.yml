@@ -38,18 +38,3 @@ jobs:
     - name: Test with pytest
       run: |
         poetry run pytest --cov=cbrlib --cov-report term -s tests
-    - uses: actions/checkout@v3
-    - run: |
-        poetry version patch
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add .
-        git commit -m "Version bump to pubish to PyPi"
-        git push
-    - name: Publish to PyPi
-      shell: bash
-      env:
-        PYPI_SECRET: ${{ secrets.PYPI_API_TOKEN }}
-      run: |
-        poetry config pypi-token.pypi "$PYPI_SECRET"
-        poetry publish --build
