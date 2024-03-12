@@ -1,4 +1,4 @@
-[![Python Library cbrlib - main branch](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml/badge.svg)](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml)
+[![Tests cbrlib - main branch](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml/badge.svg)](https://github.com/cdein/cbrlib/actions/workflows/library-test-main.yml)
 [![PyPi](https://img.shields.io/pypi/v/cbrlib)](https://pypi.org/project/cbrlib/)
 # Case Based Reasoning the Pythonic Way
 
