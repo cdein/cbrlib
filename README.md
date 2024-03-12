@@ -13,7 +13,7 @@ import dataclasses
 import functools
 from typing import Optional
 
-from cbrlib impohttps://github.com/cdein/cbrlib/actions/workflows/python-app.ymlrt (
+from cbrlib import (
     Evaluator,
     FunctionCalculationParameter,
     NumericEvaluationOptions,
