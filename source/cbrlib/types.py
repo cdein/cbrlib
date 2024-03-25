@@ -13,6 +13,7 @@ C = TypeVar("C")
 class FacetValue:
     value: Any
     count: int = 0
+    importance: Optional[float] = 0
 
 
 @dataclass(slots=True, frozen=True)
@@ -25,13 +26,14 @@ class Facet:
 class FacetOrderCriteria(Enum):
     COUNT = auto()
     VALUE = auto()
+    IMPORTANCE = auto()
 
 
 @dataclass(slots=True, frozen=True)
 class FacetConfig:
     name: str
     max_count: Optional[int] = dataclasses.field(default=5)
-    order_by: Optional[FacetOrderCriteria] = dataclasses.field(default=FacetOrderCriteria.COUNT)
+    order_by: Optional[FacetOrderCriteria] = dataclasses.field(default=FacetOrderCriteria.IMPORTANCE)
 
 
 @dataclass(slots=True, frozen=True)

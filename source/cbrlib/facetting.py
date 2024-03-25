@@ -1,4 +1,5 @@
 import math
+from collections import namedtuple
 from typing import Any, Callable, Iterable, Iterator, Optional
 
 from cbrlib.types import Facet, FacetConfig, FacetOrderCriteria, FacetValue, Result
@@ -18,10 +19,12 @@ class FacetCollectingIterator(Iterator):
         self._facet_names = [f.name for f in facets]
         self._facet_collection = {}
         self._divider = 0
+        self._value_statistics = {}
 
     def __next__(self) -> Result:
         result: Result = next(self._iterator)
         self._divider += 1
+        weight = result.similarity
         case = result.case
         for facet_name in self._facet_names:
             value = self._getvalue(case, facet_name)
@@ -30,6 +33,7 @@ class FacetCollectingIterator(Iterator):
             value_cache: dict = self._facet_collection.setdefault(facet_name, {})
             facet_value: FacetValue = value_cache.setdefault(value, FacetValue(value))
             facet_value.count += 1
+            facet_value.importance += weight
         return result
 
     @property
@@ -50,19 +54,27 @@ class FacetCollectingIterator(Iterator):
 
 
 _order_by = {
-    FacetOrderCriteria.COUNT: lambda fv: fv.count,
-    FacetOrderCriteria.VALUE: lambda fv: fv.value,
+    FacetOrderCriteria.COUNT: (lambda fv: fv.count, True),
+    FacetOrderCriteria.VALUE: (lambda fv: fv.value, True),
+    FacetOrderCriteria.IMPORTANCE: (lambda fv: fv.importance, True),
 }
 
 
 def _to_facet_values(values: Iterable[FacetValue], order_by: FacetOrderCriteria, max_count: int) -> list[FacetValue]:
+    order_by_func, order_by_reverse = _order_by[order_by]
     sorted_values = sorted(
-        values,
-        key=_order_by[order_by],
-        reverse=True,
+        _apply_facet_importance(values),
+        key=order_by_func,
+        reverse=order_by_reverse,
     )
     return sorted_values[0:max_count]  # fmt: skip
 
 
 def _calculate_entropy(facet_values: Iterable[FacetValue], divider: int) -> float:
     return sum([-((value.count / divider) * math.log2(value.count / divider)) for value in facet_values])
+
+
+def _apply_facet_importance(facet_values: Iterable[FacetValue]) -> Iterator[FacetValue]:
+    for facet_value in facet_values:
+        facet_value.importance /= facet_value.count
+        yield facet_value
