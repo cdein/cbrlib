@@ -12,7 +12,7 @@ from cbrlib import casebase, evaluate
 from cbrlib import (
     Evaluator,
     FacetConfig,
-    FacetOrderCriteria,
+    FacetValueOrderCriteria,
     FunctionCalculationParameter,
     NumericEvaluationOptions,
     ReasoningRequest,
@@ -142,7 +142,7 @@ def main() -> None:
                 FacetConfig("distillery"),
                 FacetConfig("age"),
                 FacetConfig("sweetness"),
-                FacetConfig("peatiness", order_by=FacetOrderCriteria.VALUE),
+                FacetConfig("peatiness", order_by=FacetValueOrderCriteria.value()),
                 FacetConfig("availability"),
                 FacetConfig("colour"),
             ),
