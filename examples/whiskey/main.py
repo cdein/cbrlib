@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Iterator
 
-from cbrlib import casebase, evaluate
+from cbrlib import casebase, evaluate, FacetValueProperty, FacetValueOrder
 from cbrlib import (
     Evaluator,
     FacetConfig,
@@ -142,7 +142,12 @@ def main() -> None:
                 FacetConfig("distillery"),
                 FacetConfig("age"),
                 FacetConfig("sweetness"),
-                FacetConfig("peatiness", order_by=FacetValueOrderCriteria.value()),
+                FacetConfig(
+                    "peatiness",
+                    order_by=FacetValueOrderCriteria(
+                        FacetValueProperty.VALUE, FacetValueOrder.DESCENDING
+                    ),
+                ),
                 FacetConfig("availability"),
                 FacetConfig("colour"),
             ),
