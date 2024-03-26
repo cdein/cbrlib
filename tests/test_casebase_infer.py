@@ -1,10 +1,10 @@
-from dataclasses import dataclass
 import functools
+from dataclasses import dataclass
 from typing import Optional
 
 from cbrlib import casebase, evaluate
 from cbrlib.casebase import ReasoningRequest, ReasoningResponse
-from cbrlib.types import FacetConfig
+from cbrlib.types import FacetConfig, FacetValueProperty, FacetValueOrderCriteria, FacetValueOrder, FacetValue
 
 
 @dataclass
@@ -113,3 +113,18 @@ def test_evaluate_casebase_facets() -> None:
     assert response.facets[0].values[2].count == 3
     assert response.facets[0].values[3].value == "orange"
     assert response.facets[0].values[3].count == 2
+
+
+def test_casebase_facetvalue_order_criteria_as_key() -> None:
+    order_criteria = FacetValueOrderCriteria.count()
+    key_func = order_criteria.as_key_function()
+    assert key_func(FacetValue(value="red", count=5, importance=0.8)) == 5
+    assert order_criteria.is_reverse()
+    order_criteria = FacetValueOrderCriteria.importance()
+    key_func = order_criteria.as_key_function()
+    assert key_func(FacetValue(value="red", count=5, importance=0.8)) == 0.8
+    assert order_criteria.is_reverse()
+    order_criteria = FacetValueOrderCriteria.value()
+    key_func = order_criteria.as_key_function()
+    assert key_func(FacetValue(value="red", count=5, importance=0.8)) == "red"
+    assert not order_criteria.is_reverse()
