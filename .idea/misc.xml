@@ -3,6 +3,8 @@
   <component name="Black">
     <option name="enabledOnReformat" value="true" />
     <option name="enabledOnSave" value="true" />
+    <option name="executionMode" value="BINARY" />
+    <option name="pathToExecutable" value="$PROJECT_DIR$/.venv/bin/black" />
     <option name="sdkName" value="Python 3.10 (cbrlib)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (cbrlib)" project-jdk-type="Python SDK" />

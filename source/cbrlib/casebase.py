@@ -6,7 +6,9 @@ from cbrlib.types import C, Facet, ReasoningRequest, ReasoningResponse, Result
 
 
 def _make_relevant_facets(
-    query: Any, facets: Iterable[Facet], getvalue: Callable[[Any, str, Optional[Any]], Any]
+    query: Any,
+    facets: Iterable[Facet],
+    getvalue: Callable[[Any, str, Optional[Any]], Any],
 ) -> list[Facet]:
     facet_names = set(f.name for f in facets)
     return list(

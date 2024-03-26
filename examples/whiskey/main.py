@@ -8,7 +8,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Iterator
 
-from cbrlib import casebase, evaluate, FacetValueProperty, FacetValueOrder
 from cbrlib import (
     Evaluator,
     FacetConfig,
@@ -18,6 +17,7 @@ from cbrlib import (
     ReasoningRequest,
     WeightedPropertyEvaluatorMapping,
 )
+from cbrlib import casebase, evaluate, FacetValueProperty, FacetValueOrder
 
 whiskey_colours = [
     "straw",  # "Stroh",

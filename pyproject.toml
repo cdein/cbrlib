@@ -27,10 +27,13 @@ Repository = "https://github.com/cdein/cbrlib.git"
 python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.2.0"
 flake8 = "^7.0.0"
 pytest = "^8.0.2"
 pytest-cov = "^4.1.0"
+black = "^24.3.0"
+
+[tool.black]
+line-length = 119
 
 [build-system]
 requires = ["poetry-core"]

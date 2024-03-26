@@ -1,5 +1,4 @@
 import math
-from collections import namedtuple
 from typing import Any, Callable, Iterable, Iterator, Optional
 
 from cbrlib.types import Facet, FacetConfig, FacetValueOrderCriteria, FacetValue, Result
@@ -42,7 +41,11 @@ class FacetCollectingIterator(Iterator):
             [
                 Facet(
                     facet.name,
-                    _to_facet_values(self._facet_collection[facet.name].values(), facet.order_by, facet.max_count),
+                    _to_facet_values(
+                        self._facet_collection[facet.name].values(),
+                        facet.order_by,
+                        facet.max_count,
+                    ),
                     _calculate_entropy(self._facet_collection[facet.name].values(), self._divider),
                 )
                 for facet in self._facets
@@ -53,7 +56,11 @@ class FacetCollectingIterator(Iterator):
         )
 
 
-def _to_facet_values(values: Iterable[FacetValue], order_criteria: FacetValueOrderCriteria, max_count: int) -> list[FacetValue]:
+def _to_facet_values(
+    values: Iterable[FacetValue],
+    order_criteria: FacetValueOrderCriteria,
+    max_count: int,
+) -> list[FacetValue]:
     sorted_values = sorted(
         _apply_facet_value_importance(values),
         key=order_criteria.as_key_function(),
@@ -66,7 +73,9 @@ def _calculate_entropy(facet_values: Iterable[FacetValue], divider: int) -> floa
     return sum([-((value.count / divider) * math.log2(value.count / divider)) for value in facet_values])
 
 
-def _apply_facet_value_importance(facet_values: Iterable[FacetValue]) -> Iterator[FacetValue]:
+def _apply_facet_value_importance(
+    facet_values: Iterable[FacetValue],
+) -> Iterator[FacetValue]:
     for facet_value in facet_values:
         facet_value.importance /= facet_value.count
         yield facet_value

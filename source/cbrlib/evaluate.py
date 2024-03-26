@@ -1,9 +1,14 @@
 import functools
 import math
-from typing import Any, Callable, Iterable, Mapping, Sequence
 from statistics import median
+from typing import Any, Callable, Iterable, Mapping, Sequence
 
-from cbrlib.types import Evaluator, NumericEvaluationOptions, PropertyEvaluatorMapping, WeightedPropertyEvaluatorMapping
+from cbrlib.types import (
+    Evaluator,
+    NumericEvaluationOptions,
+    PropertyEvaluatorMapping,
+    WeightedPropertyEvaluatorMapping,
+)
 
 
 def case_average(
