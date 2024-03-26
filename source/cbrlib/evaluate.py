@@ -131,6 +131,8 @@ def total_order(ordering: Sequence[Any], evaluate: Evaluator, query: Any, case: 
 
 
 def table_lookup(lookup: Mapping[str, Mapping[str, float]], query: Any, case: Any) -> float:
+    if query == case:
+        return 1
     if query not in lookup:
         return 0
     query_map = lookup[query]

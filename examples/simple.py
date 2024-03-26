@@ -20,8 +20,8 @@ class DataObject:
 
 
 color_lookup = {
-    "red": {"red": 1, "orange": 0.8, "yellow": 0.4},
-    "orange": {"orange": 1, "red": 0.8, "yellow": 0.8},
+    "red": {"orange": 0.8, "yellow": 0.4},
+    "orange": {"red": 0.8, "yellow": 0.8},
 }
 color_evaluator = functools.partial(evaluate.table_lookup, color_lookup)
 
